@@ -1,0 +1,8 @@
+n = int(input())
+print(len(max(bin(n)[2:].split('0'))))
+
+#or
+
+print(max(bin(n)[2:].split('0')).count('1')) #splits the number at each 0 in strings and counts the max of 1 in each
+
+
